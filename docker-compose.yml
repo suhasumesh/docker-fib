@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    image: 'postgres:latest'
+  redis:
+    image: 'redis:latest'
+  server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./server
+    volumes:
+      - /app/node_modules
+      - ./server:/app           #this is to map the server and the app where our container is present bcause when we change the things i.e anything it should reflect in the 'app' also   and we dont want to rebuild our app
+      

@@ -1,0 +1,19 @@
+{
+  "name": "fib_seq_multicontainer",
+  "version": "1.0.0",
+  "description": "Learning complex multi-container",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "author": "Suhas U",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^4.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
