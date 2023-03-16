@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-cluster-ip-service
+spec:
+  type: ClusterIP
+  selector:
+    component: web
+  ports:
+  - port: 3000                
+    targetPort: 3000                 #inside the container       to get that port inside the container we are going to visit the port inside the SERVICE i.e port:3000
